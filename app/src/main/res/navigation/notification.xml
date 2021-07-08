@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification"
+    app:startDestination="@id/navigation_notifications">
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.flywith24.navigation.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications">
+        <action
+            android:id="@+id/action_notifications_to_notificationsChild"
+            app:destination="@id/notificationsChild" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsChild"
+        android:name="com.flywith24.navigation.ui.notifications.NotificationsChildFragment"
+        android:label="notificationsChild" />
+</navigation>
